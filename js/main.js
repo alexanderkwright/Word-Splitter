@@ -37,4 +37,5 @@ function parseHTML(str) {
     });
 
     input.value = wrapper.innerHTML;
+    input.select();
 }
