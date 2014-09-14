@@ -1,0 +1,107 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+html, body { height: 100%; }
+
+body {
+  position: relative;
+
+  background: -webkit-linear-gradient(90deg, #fe8c00 10%, #f83600 90%);
+  background:    -moz-linear-gradient(90deg, #fe8c00 10%, #f83600 90%);
+  background:     -ms-linear-gradient(90deg, #fe8c00 10%, #f83600 90%);
+  background:      -o-linear-gradient(90deg, #fe8c00 10%, #f83600 90%);
+  background:         linear-gradient(90deg, #fe8c00 10%, #f83600 90%);
+
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.wrapper {
+  max-width: 75em;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.panel {
+  width: 60%;
+  margin: 0 auto;
+  padding: 1em 2em;
+
+  background: #fff;
+  border-radius: 3px;
+
+  -webkit-box-shadow: 0 1px 45px rgba(0,0,0,.1);
+          box-shadow: 0 1px 45px rgba(0,0,0,.1);
+}
+
+.panel-heading {
+  margin-bottom: 1em;
+  color: #444;
+  font: 100 2.5em/1.2 Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.panel-textarea {
+  width: 100%;
+  min-height: 200px;
+  border: 1px solid #ccc;
+  padding: 1em;
+}
+
+.panel-button-wrap {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.panel-button-wrap:after { content: ''; clear: both; display: table; }
+
+.panel-button:first-child { float: left; }
+.panel-button:last-child { float: right; }
+
+.panel-button {
+  border: 0;
+  margin-top: 2em;
+  padding: 1em 3em;
+
+  background: #00C989;
+  border-radius: 3px;
+  color: #fff;
+  font-size: .875em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  -webkit-transition: background .2s, opacity .2s;
+          transition: background .2s, opacity .2s;
+}
+  .panel-button:hover,
+  .panel-button:focus {
+    outline: none;
+    background: #11E2A0;
+  }
+  .panel-button:active {
+    outline: none;
+    -webkit-box-shadow: inset 0 1px 6px rgba(0,0,0,.2);
+            box-shadow: inset 0 1px 6px rgba(0,0,0,.2);
+  }
+
+.panel-reset {
+  background: #72B5CF;
+  opacity: 0;
+  pointer-events: none;
+}
+  .panel-reset:hover,
+  .panel-reset:focus { background: #87C8E2; }
+
+.reset-available .panel-reset { opacity: 1; pointer-events: inherit; }
